@@ -33,17 +33,17 @@ The Pauli gates are a set of three single-qubit gates used in quantum computing 
 
 Here are the three Pauli gates:
 
-1. Pauli-X gate (NOT): This gate, also called the NOT gate, rotates the state of a qubit around the X-axis by pi radians (180 degrees), which flips the state from |0⟩ to |1⟩ or vice versa. The matrix representation of the Pauli-X gate is:
+1. Pauli-X gate (NOT): This gate, also called the NOT gate, rotates the state of a qubit around the X-axis by pi radians (180 degrees), which flips the state from `|0⟩` to `|1⟩` or vice versa. The matrix representation of the Pauli-X gate is:
 ```csharp
 [0 1]
 [1 0]
 ```
-2. Pauli-Y gate: This gate rotates the state of a qubit around the Y-axis by pi radians (180 degrees), which maps the state |0⟩ to the state i|1⟩ and the state |1⟩ to the state -i|0⟩. The matrix representation of the Pauli-Y gate is:
+2. Pauli-Y gate: This gate rotates the state of a qubit around the Y-axis by pi radians (180 degrees), which maps the state `|0⟩` to the state `i|1⟩` and the state `|1⟩` to the state `-i|0⟩`. The matrix representation of the Pauli-Y gate is:
 ```csharp
 [0 -i]
 [i 0]
 ```
-3. Pauli-Z gate: This gate rotates the state of a qubit around the Z-axis by pi radians (180 degrees), which negates the phase of the |1⟩ state. The matrix representation of the Pauli-Z gate is:
+3. Pauli-Z gate: This gate rotates the state of a qubit around the Z-axis by pi radians (180 degrees), which negates the phase of the `|1⟩` state. The matrix representation of the Pauli-Z gate is:
 ```csharp
 [1 0]
 [0 -1]
@@ -52,12 +52,12 @@ The Pauli gates are fundamental gates in quantum computing and are used in many 
 
 # Hadamard Gate
 
-The Hadamard gate is a single-qubit gate in quantum computing that transforms the state of a qubit from the |0⟩ state to a superposition state that is an equal probability mixture of the |0⟩ and |1⟩ states. The Hadamard gate is represented by the following matrix:
+The Hadamard gate is a single-qubit gate in quantum computing that transforms the state of a qubit from the |0⟩ state to a superposition state that is an equal probability mixture of the `|0⟩` and `|1⟩` states. The Hadamard gate is represented by the following matrix:
 ```csharp
 [1  1]
 [1 -1] / sqrt(2)
 ```
-Applying the Hadamard gate to a qubit that is initially in the |1⟩ state results in a different superposition state that is an equal probability mixture of the |0⟩ and |1⟩ states, but with a phase shift of pi:
+Applying the Hadamard gate to a qubit that is initially in the `|1⟩` state results in a different superposition state that is an equal probability mixture of the `|0⟩` and `|1⟩` states, but with a phase shift of `pi`:
 ```csharp
 [-1  1]
 [ 1  1] / sqrt(2)
@@ -87,24 +87,24 @@ H|0⟩ = 1/√2 * |0⟩ + 1/√2 * |1⟩
 # Phase Gates
 Phase gates are a class of single-qubit quantum gates that apply a phase shift to the state of a qubit. These gates are used in quantum computing circuits to manipulate the phase of a quantum state and are important in many quantum algorithms.
 
-There are several types of phase gates, but one of the most common is the phase shift gate, also known as the Rθ gate. The phase shift gate applies a phase shift of θ radians to the state of a qubit. The matrix representation of the phase shift gate is:
+There are several types of phase gates, but one of the most common is the phase shift gate, also known as the Rθ gate. The phase shift gate applies a phase shift of `θ` radians to the state of a qubit. The matrix representation of the phase shift gate is:
 ```csharp
 [1       0      ]
 [0  e^(iθ)       ]
 ```
-where `e^(iθ)` is a complex number with a magnitude of 1 and an angle of θ radians.
+where `e^(iθ)` is a complex number with a magnitude of `1` and an angle of `θ` radians.
 
-Another type of phase gate is the S gate, also known as the phase gate or the Z^(1/2) gate. The S gate applies a phase shift of pi/2 radians (90 degrees) to the state of a qubit. The matrix representation of the S gate is:
+Another type of phase gate is the S gate, also known as the phase gate or the `Z^(1/2)` gate. The S gate applies a phase shift of `pi/2` radians (90 degrees) to the state of a qubit. The matrix representation of the S gate is:
 ```csharp
 [1 0]
 [0 i]
 ```
-The S gate is a special case of the phase shift gate, where θ = pi/2.
+The S gate is a special case of the phase shift gate, where `θ = pi/2`.
 
 Phase gates are important in quantum algorithms that involve interference between different quantum states, such as the quantum Fourier transform and the quantum phase estimation algorithm. They are also a part of a set of universal quantum gates that can be used to construct any other quantum gate.
 
 # The CNOT Gate
-The CNOT gate, short for Controlled-NOT gate, is a two-qubit quantum gate that is widely used in quantum computing. It applies a NOT gate (also known as the Pauli-X gate) to the target qubit if the control qubit is in the state |1⟩, and leaves the target qubit unchanged if the control qubit is in the state |0⟩. The CNOT gate is represented by the following matrix:
+The CNOT gate, short for Controlled-NOT gate, is a two-qubit quantum gate that is widely used in quantum computing. It applies a NOT gate (also known as the Pauli-X gate) to the target qubit if the control qubit is in the state `|1⟩`, and leaves the target qubit unchanged if the control qubit is in the state `|0⟩`. The CNOT gate is represented by the following matrix:
 ```csharp
 [1 0 0 0]
 [0 1 0 0]
@@ -130,7 +130,7 @@ The SWAP gate is an example of a non-trivial two-qubit quantum gate, which means
 The SWAP gate is an important quantum gate that is commonly used in quantum circuits and quantum algorithms.
 
 # The Controlled-SWAP Gate
-The Fredkin gate, also known as the Controlled-SWAP gate, is a three-qubit quantum gate that swaps the states of two target qubits (the second and third qubits) conditionally based on the state of a control qubit (the first qubit). If the control qubit is in the state |1⟩, then the states of the two target qubits are swapped. Otherwise, the states of the two target qubits are unchanged.
+The Fredkin gate, also known as the Controlled-SWAP gate, is a three-qubit quantum gate that swaps the states of two target qubits (the second and third qubits) conditionally based on the state of a control qubit (the first qubit). If the control qubit is in the state `|1⟩`, then the states of the two target qubits are swapped. Otherwise, the states of the two target qubits are unchanged.
 
 The Fredkin gate is represented by the following matrix:
 ```csharp
@@ -143,12 +143,12 @@ The Fredkin gate is represented by the following matrix:
 [0 0 0 0 0 1 0 0]
 [0 0 0 0 0 0 0 1]
 ```
-The Fredkin gate is useful in quantum computing for implementing reversible logic operations, such as the classical AND, OR, and XOR gates. The Fredkin gate is a reversible gate, which means that it preserves quantum information and can be run in reverse to undo its operation.
+The Fredkin gate is useful in quantum computing for implementing reversible logic operations, such as the classical `AND`, `OR`, and `XOR` gates. The Fredkin gate is a reversible gate, which means that it preserves quantum information and can be run in reverse to undo its operation.
 
 The Fredkin gate is an important quantum gate that is used in quantum circuits and quantum algorithms, particularly in quantum error correction and quantum teleportation.
 
 # Toffoli Gate (CCNOT)
-The Toffoli gate, also known as the Controlled-Controlled-NOT (CCNOT) gate, is a three-qubit quantum gate that is a generalization of the CNOT gate. The Toffoli gate applies a NOT gate to the target qubit (the third qubit) if and only if both control qubits (the first and second qubits) are in the state |1⟩. If either or both of the control qubits are in the state |0⟩, then the state of the target qubit is unchanged.
+The Toffoli gate, also known as the Controlled-Controlled-NOT (CCNOT) gate, is a three-qubit quantum gate that is a generalization of the CNOT gate. The Toffoli gate applies a NOT gate to the target qubit (the third qubit) if and only if both control qubits (the first and second qubits) are in the state `|1⟩`. If either or both of the control qubits are in the state `|0⟩`, then the state of the target qubit is unchanged.
 
 The Toffoli gate is represented by the following matrix:
 ```csharp
@@ -166,7 +166,7 @@ The Toffoli gate is a universal gate for classical reversible computing, which m
 The Toffoli gate is an important quantum gate that plays a key role in many quantum algorithms, such as the Deutsch-Jozsa algorithm and Grover's search algorithm. The Toffoli gate is also used in quantum error correction and quantum teleportation.
 
 # Controlled-Z Gate (CZ)
-The Controlled-Z gate, also known as the CZ gate, is a two-qubit quantum gate that applies a phase shift of -1 to the target qubit (the second qubit) if and only if the control qubit (the first qubit) is in the state |1⟩. If the control qubit is in the state |0⟩, then the phase of the target qubit is unchanged.
+The Controlled-Z gate, also known as the CZ gate, is a two-qubit quantum gate that applies a phase shift of `-1` to the target qubit (the second qubit) if and only if the control qubit (the first qubit) is in the state `|1⟩`. If the control qubit is in the state `|0⟩`, then the phase of the target qubit is unchanged.
 
 The Controlled-Z gate is represented by the following matrix:
 ```csharp
@@ -182,7 +182,7 @@ The Controlled-Z gate is an example of a non-trivial two-qubit quantum gate, whi
 The Controlled-Z gate is an important quantum gate that plays a key role in many quantum algorithms, such as the quantum Fourier transform and Shor's algorithm for factoring large numbers.
 
 # pi/8 gate (T)
-The T gate, also known as the pi/8 gate, is a single-qubit quantum gate that applies a phase shift of e^(i*pi/4) to the state |1⟩ and leaves the state |0⟩ unchanged. The T gate is represented by the following matrix:
+The T gate, also known as the `pi/8` gate, is a single-qubit quantum gate that applies a phase shift of `e^(i*pi/4)` to the state `|1⟩` and leaves the state `|0⟩` unchanged. The T gate is represented by the following matrix:
 ```csharp
 [1 0]
 [0 e^(i*pi/4)]
