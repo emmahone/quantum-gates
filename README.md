@@ -33,7 +33,7 @@ The Pauli gates are a set of three single-qubit gates used in quantum computing 
 
 Here are the three Pauli gates:
 
-1. Pauli-X gate: This gate, also called the NOT gate, rotates the state of a qubit around the X-axis by pi radians (180 degrees), which flips the state from |0⟩ to |1⟩ or vice versa. The matrix representation of the Pauli-X gate is:
+1. Pauli-X gate (NOT): This gate, also called the NOT gate, rotates the state of a qubit around the X-axis by pi radians (180 degrees), which flips the state from |0⟩ to |1⟩ or vice versa. The matrix representation of the Pauli-X gate is:
 ```csharp
 [0 1]
 [1 0]
@@ -51,6 +51,7 @@ Here are the three Pauli gates:
 The Pauli gates are fundamental gates in quantum computing and are used in many quantum algorithms, such as the quantum Fourier transform and the phase estimation algorithm. They are also a part of a set of universal quantum gates that can be used to construct any other quantum gate.
 
 # Hadamard Gate
+
 The Hadamard gate is a single-qubit gate in quantum computing that transforms the state of a qubit from the |0⟩ state to a superposition state that is an equal probability mixture of the |0⟩ and |1⟩ states. The Hadamard gate is represented by the following matrix:
 ```csharp
 [1  1]
@@ -64,6 +65,24 @@ Applying the Hadamard gate to a qubit that is initially in the |1⟩ state resul
 The Hadamard gate is important in quantum computing because it allows us to create superposition states, which are necessary for many quantum algorithms, such as the quantum search algorithm and the quantum phase estimation algorithm. It is also a part of a set of universal quantum gates that can be used to construct any other quantum gate.
 
 The Hadamard gate is sometimes referred to as the H gate and is named after the physicist Jacques Hadamard. It is commonly used in quantum circuits and quantum algorithms and is a fundamental gate in quantum computing.
+
+# Hadamard Example
+Suppose we have a qubit in the `|0⟩` state, which is typically represented as:
+```css
+|0⟩ = [1, 0]
+```
+Applying a Hadamard gate H to this qubit would transform it into a superposition state given by:
+```css
+H|0⟩ = 1/√2 * (|0⟩ + |1⟩)
+```
+Expanding this out, we get:
+```css
+H|0⟩ = 1/√2 * [1, 1]
+```
+So the state of the qubit after applying the Hadamard gate is:
+```css
+H|0⟩ = 1/√2 * |0⟩ + 1/√2 * |1⟩
+```
 
 # Phase Gates
 Phase gates are a class of single-qubit quantum gates that apply a phase shift to the state of a qubit. These gates are used in quantum computing circuits to manipulate the phase of a quantum state and are important in many quantum algorithms.
