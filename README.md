@@ -41,11 +41,11 @@ Here are the three Pauli gates:
 2. `Pauli-Y gate`: This gate rotates the state of a qubit around the Y-axis by pi radians (180 degrees), which maps the state `|0⟩` to the state `i|1⟩` and the state `|1⟩` to the state `-i|0⟩`. The matrix representation of the Pauli-Y gate is:
 ```csharp
 [0 -i]
-[i 0]
+[i  0]
 ```
 3. `Pauli-Z gate`: This gate rotates the state of a qubit around the Z-axis by pi radians (180 degrees), which negates the phase of the `|1⟩` state. The matrix representation of the Pauli-Z gate is:
 ```csharp
-[1 0]
+[1  0]
 [0 -1]
 ```
 The Pauli gates are fundamental gates in quantum computing and are used in many quantum algorithms, such as the quantum Fourier transform and the phase estimation algorithm. They are also a part of a set of universal quantum gates that can be used to construct any other quantum gate.
@@ -89,8 +89,8 @@ H|0⟩ = 1/√2 * |0⟩ + 1/√2 * |1⟩
 
 There are several types of phase gates, but one of the most common is the phase shift gate, also known as the Rθ gate. The phase shift gate applies a phase shift of `θ` radians to the state of a qubit. The matrix representation of the phase shift gate is:
 ```csharp
-[1       0      ]
-[0  e^(iθ)       ]
+[1     0   ]
+[0  e^(iθ) ]
 ```
 where `e^(iθ)` is a complex number with a magnitude of `1` and an angle of `θ` radians.
 
@@ -170,9 +170,9 @@ The `Controlled-Z gate`, also known as the `CZ` gate, is a two-qubit quantum gat
 
 The Controlled-Z gate is represented by the following matrix:
 ```csharp
-[1 0 0 0]
-[0 1 0 0]
-[0 0 1 0]
+[1 0 0  0]
+[0 1 0  0]
+[0 0 1  0]
 [0 0 0 -1]
 ```
 The Controlled-Z gate is a basic quantum gate that is commonly used in quantum circuits and quantum algorithms for implementing controlled phase operations. The Controlled-Z gate is also useful for implementing quantum error correction and for creating entangled states.
