@@ -184,7 +184,7 @@ The Controlled-Z gate is an important quantum gate that plays a key role in many
 # pi/8 gate (T)
 The `T gate`, also known as the `pi/8` gate, is a single-qubit quantum gate that applies a phase shift of `e^(i*pi/4)` to the state `|1⟩` and leaves the state `|0⟩` unchanged. The T gate is represented by the following matrix:
 ```csharp
-[1 0]
+[1     0     ]
 [0 e^(i*pi/4)]
 ```
 The T gate is a common gate used in quantum algorithms and circuits for implementing controlled phase operations. It is also used in conjunction with other gates, such as the Hadamard gate, to construct more complex gates and operations.
